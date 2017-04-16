@@ -21,7 +21,15 @@ export default new VueRouter({
    */
 
   routes: [
-    { path: '/', component: load('Index') }, // Default
-    { path: '*', component: load('Error404') } // Not found
+    {
+      path: '/', // Default
+      component: load('Index'),
+      children: [
+        { path: '/settings', component: load('views/Settings') }, // Settings
+        { path: '/help', component: load('views/Help') }, // Settings
+        { path: '/controllers', component: load('views/Controllers') }, // Controllers
+        { path: '*', component: load('Error404') } // Not found
+      ]
+    }
   ]
 })
