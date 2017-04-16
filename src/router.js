@@ -1,10 +1,10 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
-function load (component) {
-  return () => System.import(`components/${component}.vue`)
+function load(component) {
+  return () => System.import(`components/${component}.vue`);
 }
 
 export default new VueRouter({
@@ -28,8 +28,8 @@ export default new VueRouter({
         { path: '/settings', component: load('views/Settings') }, // Settings
         { path: '/help', component: load('views/Help') }, // Settings
         { path: '/controllers', component: load('views/Controllers') }, // Controllers
-        { path: '*', component: load('Error404') } // Not found
-      ]
-    }
-  ]
-})
+        { path: '*', component: load('Error404') }, // Not found
+      ],
+    },
+  ],
+});

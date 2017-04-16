@@ -26,27 +26,27 @@
 </template>
 
 <script>
-import drawer from './drawer'
+import drawer from './Drawer';
 
 export default {
-  data () {
+  data() {
     return {
-    }
+    };
   },
   computed: {
   },
   methods: {
   },
-  mounted () {
+  mounted() {
     this.$nextTick(() => {
-    })
+    });
   },
-  beforeDestroy () {
+  beforeDestroy() {
   },
   components: {
-    drawer
-  }
-}
+    drawer,
+  },
+};
 </script>
 
 <style lang="styl">
