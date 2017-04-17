@@ -27,7 +27,6 @@ const initialState = {
 const mutations = {};
 const actions = {};
 const getters = {
-  msg: () => 'test controllers getter',
   connected: (state) => state.all.filter((item) => item.connected),
 };
 

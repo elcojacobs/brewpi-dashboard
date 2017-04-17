@@ -46,7 +46,6 @@ export default {
     }),
   },
   computed: {
-    // isWifi: function() { return this.controller.connection.type === 'wifi'},
     isWifi() {
       return this.controller.connection.type === 'wifi';
     },

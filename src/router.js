@@ -25,8 +25,9 @@ export default new VueRouter({
       path: '/', // Default
       component: load('Index'),
       children: [
+        { path: '', component: load('views/Home') }, // Home
         { path: '/settings', component: load('views/Settings') }, // Settings
-        { path: '/help', component: load('views/Help') }, // Settings
+        { path: '/help', component: load('views/Help') }, // Help
         { path: '/controllers', component: load('views/Controllers/ControllersView') }, // Controllers
         { path: '*', component: load('Error404') }, // Not found
       ],
